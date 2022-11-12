@@ -90,6 +90,12 @@ local jp = tojp1..jpstring..tojp3
 local savews = ""
 local jscript
 local wscript
+local Button = Mobil:CreateButton({
+	Name = "Copy Infinite Jump Script",
+	Callback = function()
+        setclipboard(ij)
+	end,
+})
 local Slider = Mobil:CreateSlider({
 	Name = "Walkspeed Amount",
 	Range = {0, 300},
